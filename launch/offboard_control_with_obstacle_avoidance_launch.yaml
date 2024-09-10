@@ -1,0 +1,7 @@
+launch:
+
+- node:
+    pkg: "px4_ros_com"
+    exec: "offboard_control_with_obstacle_avoidance"
+    name: "offboard_control_with_obstacle_avoidance"
+    output: "screen"

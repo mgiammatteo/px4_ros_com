@@ -1,0 +1,15 @@
+launch:
+
+- node:
+    pkg: "px4_ros_com"
+    exec: "offboard_control_two"
+    name: "offboard_control_two"
+    output: "screen"
+    namespace: "px4_1"
+
+- node:
+    pkg: "px4_ros_com"
+    exec: "offboard_control_two"
+    name: "offboard_control_two"
+    output: "screen"
+    namespace: "px4_2"

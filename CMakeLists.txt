@@ -61,6 +61,21 @@ add_executable(offboard_control src/examples/offboard/offboard_control.cpp)
 ament_target_dependencies(offboard_control rclcpp px4_msgs)
 install(TARGETS offboard_control DESTINATION lib/${PROJECT_NAME})
 
+# examples/offboard/offboard_control_mine
+add_executable(offboard_control_mine src/examples/offboard/offboard_control_mine.cpp)
+ament_target_dependencies(offboard_control_mine rclcpp px4_msgs)
+install(TARGETS offboard_control_mine DESTINATION lib/${PROJECT_NAME})
+
+# examples/offboard/offboard_control_two
+add_executable(offboard_control_two src/examples/offboard/offboard_control_two.cpp)
+ament_target_dependencies(offboard_control_two rclcpp px4_msgs)
+install(TARGETS offboard_control_two DESTINATION lib/${PROJECT_NAME})
+
+# examples/offboard/offboard_control_with_obstacle_avoidance
+add_executable(offboard_control_with_obstacle_avoidance src/examples/offboard/offboard_control_with_obstacle_avoidance.cpp)
+ament_target_dependencies(offboard_control_with_obstacle_avoidance rclcpp px4_msgs)
+install(TARGETS offboard_control_with_obstacle_avoidance DESTINATION lib/${PROJECT_NAME})
+
 # examples/offboard/offboard_control_srv
 add_executable(offboard_control_srv src/examples/offboard/offboard_control_srv.cpp)
 ament_target_dependencies(offboard_control_srv rclcpp px4_msgs)
